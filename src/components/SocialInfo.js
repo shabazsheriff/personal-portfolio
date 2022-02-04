@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { motion, useMotionValue } from "framer-motion";
+import { ScreenSize } from "../Hooks/ScreenWidth";
 import {
   AnimateModal,
   StaggerChildren,
@@ -34,6 +35,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 
 function SocialInfo({ showConnect, setShowConnect }) {
+  const [, ScreenHeight] = ScreenSize();
   const [elasticity, setElasticity] = useState(1.8);
   const [skills, setSkills] = useState(false);
   const y = useMotionValue(0);
@@ -92,9 +94,14 @@ function SocialInfo({ showConnect, setShowConnect }) {
       <ShowConnectContainer
         ref={menuRef}
         drag={"y"}
-        dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+        dragConstraints={{
+          left: 0,
+          top: ScreenHeight < 740 ? -50 : ScreenHeight < 670 ? -150 : 0,
+          right: 0,
+          bottom: 0,
+        }}
         dragElastic={elasticity}
-        variants={AnimateModal}
+        variants={AnimateModal(ScreenHeight)}
         initial="initial"
         animate="animate"
         exit="exit"

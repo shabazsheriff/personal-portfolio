@@ -43,10 +43,17 @@ export const AnimateBackground = {
   },
 };
 
-export const AnimateModal = {
-  initial: { y: "100vh", opacity: 0 },
-  animate: { y: "0px", opacity: 1, transition: { delay: 0.2, type: "tween" } },
-  exit: { y: "100vh", transition: { ease: "easeInOut" } },
+export const AnimateModal = (ScreenHeight) => {
+  return {
+    initial: { y: "100vh", opacity: 0 },
+    animate: {
+      y: "0px",
+      bottom: ScreenHeight < 740 ? -50 : ScreenHeight < 670 ? -150 : 0,
+      opacity: 1,
+      transition: { delay: 0.2, type: "tween" },
+    },
+    exit: { y: "100vh", transition: { ease: "easeInOut" } },
+  };
 };
 
 export const StaggerChildren = (delayChildren, staggerChildren) => {
