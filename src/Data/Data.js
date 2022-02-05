@@ -3,7 +3,7 @@ export const placeholderText = [
     type: "paragraph",
     styles: {
       fontSize: "30px",
-      fontSizeMob: "20px",
+      fontSizeMob: "18px",
     },
     text: "Hi, my name is ",
   },
@@ -11,7 +11,7 @@ export const placeholderText = [
     type: "heading2",
     styles: {
       fontSize: "100px",
-      fontSizeMob: "40px",
+      fontSizeMob: "32px",
       letterSpacing: "1px",
       fontFamily: "PermanentMarker-Regular",
       lineHeight: "40px",
@@ -24,7 +24,7 @@ export const About = [
   {
     styles: {
       fontSize: "100px",
-      fontSizeMob: "20px",
+      fontSizeMob: "18px",
       color: "#fff",
     },
     text: "I'm a software engineer.",
@@ -32,7 +32,7 @@ export const About = [
   {
     styles: {
       fontSize: "50px",
-      fontSizeMob: "20px",
+      fontSizeMob: "18px",
       color: "#fff",
     },
     text: "I build things for the web, specializing in developing and designing applications.",

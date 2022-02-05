@@ -48,7 +48,7 @@ export const AnimateModal = (ScreenHeight) => {
     initial: { y: "100vh", opacity: 0 },
     animate: {
       y: "0px",
-      bottom: ScreenHeight < 740 ? -70 : ScreenHeight < 670 ? -200 : 0,
+      bottom: ScreenHeight < 720 ? -70 : ScreenHeight < 670 ? -200 : 0,
       opacity: 1,
       transition: { delay: 0.2, type: "tween" },
     },
