@@ -96,7 +96,7 @@ function SocialInfo({ showConnect, setShowConnect }) {
         drag={"y"}
         dragConstraints={{
           left: 0,
-          top: ScreenHeight < 720 ? -70 : ScreenHeight < 670 ? -200 : 0,
+          top: ScreenHeight < 720 ? -70 : ScreenHeight < 650 ? -200 : 0,
           right: 0,
           bottom: 0,
         }}
