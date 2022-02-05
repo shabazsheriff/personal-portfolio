@@ -20,7 +20,7 @@ export const ShowConnectContainer = styled(motion.div)`
     }
     &__head {
       color: ${black};
-      font-size: 34px;
+      font-size: 26px;
       font-weight: bold;
       margin-top: 20px;
       margin-bottom: 8px;
@@ -51,7 +51,7 @@ export const Specialize = styled.div`
   .specialize {
     &__head {
       color: ${black};
-      font-size: 35px;
+      font-size: 26px;
       font-weight: bold;
       margin-top: 8px;
     }
@@ -77,7 +77,7 @@ export const Specialize = styled.div`
     }
   }
   ${SpecializeImageText} {
-    font-size: 12px;
+    font-size: 11px;
     text-transform: capitalize;
     color: ${white};
     font-weight: bold;
