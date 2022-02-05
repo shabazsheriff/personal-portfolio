@@ -11,7 +11,7 @@ import { Image } from "../styles/GlobalStyles";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const PlainText = styled(motion.div)`
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   display: flex;
   flex-direction: column;

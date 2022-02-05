@@ -63,7 +63,8 @@ export const Specialize = styled.div`
         text-align: center;
         margin-top: 25px;
         background: #000;
-        padding: 25px 0;
+        padding: 25px 5px;
+        box-sizing: border-box;
         border-radius: 10px;
         img {
           width: 70px;
