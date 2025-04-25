@@ -13,9 +13,9 @@ function App() {
           <HeroBanner />
         </div>
       ) : ScreenWidth < 940 ? (
-        <div className="Notify-Display">Rotate Your Phone (Portrait)</div>
+        <div className="Notify-Display">Rotate Your Phone to Portrait mode</div>
       ) : (
-        <div className="Notify-Display">Available only in mobile devices</div>
+        <div className="Notify-Display">Please switch to mobile device</div>
       )}
     </>
   );

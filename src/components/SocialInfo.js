@@ -142,7 +142,7 @@ function SocialInfo({ showConnect, setShowConnect }) {
               </IconButton>
             </motion.a>
             <motion.a
-              href="mailto:shabazsharifftag@gmail.com?subject=| Portfolio"
+              href="mailto:shabazsheriff@gmail.com?subject=| Portfolio" //shabazsharifftag@gmail.com
               variants={StaggerChildrenItem}
             >
               <IconButton
@@ -166,7 +166,6 @@ function SocialInfo({ showConnect, setShowConnect }) {
           />
         ) : (
           <>
-            <div>kddk</div>
             <Skills
               Specializations={TechnicalSkills}
               SkillsHead="Technical Skills"
